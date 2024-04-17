@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Connect With Us</h1>
+        <p>We will answer your questions as soon as possible</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Send your request</h3>
+                <form>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="John Smith">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="+1 234 567 890">
+                        </div>
+
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="text" placeholder="johnsmith@gmail.com">
+                        </div>
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="">
+                        </div>
+
+                    </div>
+
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>contactus@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+1 234 567 890</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Sokolovska 93, Karlovy Vary, 36005</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <a href="/">Home</a>
+</body>
+</html>
